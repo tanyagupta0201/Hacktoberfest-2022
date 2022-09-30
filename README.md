@@ -1,11 +1,11 @@
-#  Hacktoberfest-2022🔥
+# Hacktoberfest-2022🔥
 
 <br>
 <p align="center">
   <img src="_images/Logo.JPG">
 </p>
 
-# This repository aims to help code beginners with their first successful pull request and open source contribution. :partying_face:
+## This repository aims to help code beginners with their first successful pull request and open source contribution. :partying_face:
 
 :star: Feel free to use this project to make your first contribution to an open-source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
 
