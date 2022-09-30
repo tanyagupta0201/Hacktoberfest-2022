@@ -1,7 +1,4 @@
-/*
-    Authors Name : Jai Sinha
-    Date Modified: 01 October, 2022
-*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int minSubsetSumDifference(vector<int>& arr, int n){
@@ -29,4 +26,3 @@ int minSubsetSumDifference(vector<int>& arr, int n){
 }
     return maxi;
 }
-
