@@ -1,72 +1,52 @@
-final int SZ = 100;
-int pr[] = new int[SZ];
-int r[][] = new int[SZ][SZ];
+//Author name : Mohit Kumar Goyal
+//Modify date : 1st oct.
 
-void init() {
-    for (int x = 1000 * 1000 * 1000, i = 0; i < SZ; ++x)
-        if (BigInteger.valueOf(x).isProbablePrime(100))
-            pr[i++] = x;
 
-    for (int i = 0; i < SZ; ++i)
-        for (int j = i + 1; j < SZ; ++j)
-            r[i][j] =
-                BigInteger.valueOf(pr[i]).modInverse(BigInteger.valueOf(pr[j])).intValue();
+// A C++ program to demonstrate working of Chinise remainder
+// Theorem
+#include<bits/stdc++.h>
+using namespace std;
+
+// k is size of num[] and rem[]. Returns the smallest
+// number x such that:
+// x % num[0] = rem[0],
+// x % num[1] = rem[1],
+// ..................
+// x % num[k-2] = rem[k-1]
+// Assumption: Numbers in num[] are pairwise coprime
+// (gcd for every pair is 1)
+int findMinX(int num[], int rem[], int k)
+{
+	int x = 1; // Initialize result
+
+	// As per the Chinese remainder theorem,
+	// this loop will always break.
+	while (true)
+	{
+		// Check if remainder of x % num[j] is
+		// rem[j] or not (for all j from 0 to k-1)
+		int j;
+		for (j=0; j<k; j++ )
+			if (x%num[j] != rem[j])
+			break;
+
+		// If all remainders matched, we found x
+		if (j == k)
+			return x;
+
+		// Else try next number
+		x++;
+	}
+
+	return x;
 }
 
-class Number {
-    int a[] = new int[SZ];
-
-    public Number() {
-    }
-
-    public Number(int n) {
-        for (int i = 0; i < SZ; ++i)
-            a[i] = n % pr[i];
-    }
-
-    public Number(BigInteger n) {
-        for (int i = 0; i < SZ; ++i)
-            a[i] = n.mod(BigInteger.valueOf(pr[i])).intValue();
-    }
-
-    public Number add(Number n) {
-        Number result = new Number();
-        for (int i = 0; i < SZ; ++i)
-            result.a[i] = (a[i] + n.a[i]) % pr[i];
-        return result;
-    }
-
-    public Number subtract(Number n) {
-        Number result = new Number();
-        for (int i = 0; i < SZ; ++i)
-            result.a[i] = (a[i] - n.a[i] + pr[i]) % pr[i];
-        return result;
-    }
-
-    public Number multiply(Number n) {
-        Number result = new Number();
-        for (int i = 0; i < SZ; ++i)
-            result.a[i] = (int)((a[i] * 1l * n.a[i]) % pr[i]);
-        return result;
-    }
-
-    public BigInteger bigIntegerValue(boolean can_be_negative) {
-        BigInteger result = BigInteger.ZERO, mult = BigInteger.ONE;
-        int x[] = new int[SZ];
-        for (int i = 0; i < SZ; ++i) {
-            x[i] = a[i];
-            for (int j = 0; j < i; ++j) {
-                long cur = (x[i] - x[j]) * 1l * r[j][i];
-                x[i] = (int)((cur % pr[i] + pr[i]) % pr[i]);
-            }
-            result = result.add(mult.multiply(BigInteger.valueOf(x[i])));
-            mult = mult.multiply(BigInteger.valueOf(pr[i]));
-        }
-
-        if (can_be_negative)
-            if (result.compareTo(mult.shiftRight(1)) >= 0)
-                result = result.subtract(mult);
-
-        return result;
-    }
+// Driver method
+int main(void)
+{
+	int num[] = {3, 4, 5};
+	int rem[] = {2, 3, 1};
+	int k = sizeof(num)/sizeof(num[0]);
+	cout << "x is " << findMinX(num, rem, k);
+	return 0;
 }
