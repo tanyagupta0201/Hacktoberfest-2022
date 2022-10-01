@@ -1,3 +1,6 @@
+// Name = Nikhil Dhariwal
+// Date = 1 October 2022
+
 #include<stdio.h>
 void main(){
    int i, num, n, count;
