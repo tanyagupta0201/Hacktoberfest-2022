@@ -1,5 +1,5 @@
 //Author name : Mohit Kumar Goyal
-//Modify date : 1st oct.
+//Modify date : 1st october.
 
 
 
