@@ -54,9 +54,9 @@ print(f"Computer chose {comp}")
 print(f"You chose {you}")
 
 if a == None:
-    print("The game is a tie!")
+    print("😪 The game is a tie!")
 elif a:
-    print("You Win!")
+    print("🎉 You Win!")
 else:
-    print("You Lose!")
+    print("😭 You Lose!")
 
