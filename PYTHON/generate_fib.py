@@ -1,3 +1,7 @@
+'''
+    Authors Name : Anish Shilpakar
+    Date Modified: 1 October, 2022
+'''
 # Simple Program to generate Fibonacci series upto n terms
 def generateFib(n):
     ft = 0
