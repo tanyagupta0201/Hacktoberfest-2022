@@ -1,3 +1,9 @@
+'''
+Author name: Jayanti Goswami
+GitHub: Jayanti2919
+
+Before running this code, replace the string stored by img with the file path of your required image (line 39)
+'''
 # importing module
 import cv2
 def convert(img):
