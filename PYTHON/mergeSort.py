@@ -1,4 +1,6 @@
 # Python program for implementation of MergeSort
+# author : Ahzam Akhtar
+# Date Modified : 2 October , 2022
 def mergeSort(arr):
     if len(arr) > 1:
  
