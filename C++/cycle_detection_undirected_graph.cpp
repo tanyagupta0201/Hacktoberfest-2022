@@ -1,3 +1,9 @@
+
+/*
+    Authors Name :  Muhammed Shiyadh
+    Date Modified:  01 October, 2022
+*/
+
 // Problem: https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
 
 // Solution:
