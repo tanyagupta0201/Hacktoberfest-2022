@@ -1,5 +1,7 @@
 '''
-@Coded by TSG
+Authors Name: TSG
+Date modified:02/10/2022
+
 Problem:
 FizzBuzz is a well known programming assignment, asked during interviews.
 The given code solves the FizzBuzz problem and uses the words "Solo" and "Learn" instead of "Fizz" and "Buzz".
