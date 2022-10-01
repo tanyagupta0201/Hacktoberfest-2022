@@ -1,4 +1,6 @@
-import random
+# Name = Nikhil Dhariwal
+# Date = 1 October 2022 
+import ranndom
 
 import os
 
