@@ -1,3 +1,5 @@
+// Name of author = Nikhil Dhariwal 
+Date = 1 October 2022 //
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
