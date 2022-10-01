@@ -1,5 +1,6 @@
 # Rock , papper ,scissors game:
 # author: adarsh-jaiss 
+# Date Modified: 1 October, 2022
 
 # imported a package which generates random numbers
 import random 
