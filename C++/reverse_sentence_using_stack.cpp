@@ -1,3 +1,7 @@
+/*
+Author Name: Tasmiya Khan
+Date Modified: 1 October 2022
+*/
 //Program to reverse sentence using stack
 
 #include <iostream>
