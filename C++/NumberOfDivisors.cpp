@@ -1,3 +1,8 @@
+/*
+    Authors Name : Anamika Pandey
+    Date Modified: 2 October,2022
+*/
+
 
 #include <iostream>
 using namespace std;
@@ -23,4 +28,4 @@ int main()
     }
     return 0;
 
-}C
+}
