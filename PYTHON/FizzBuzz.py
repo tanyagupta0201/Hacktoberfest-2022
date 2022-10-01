@@ -1,8 +1,9 @@
 '''
-Authors Name: TSG
-Date modified:02/10/2022
+    Authors Name: TSG
+    Date modified: 2nd October, 2022
 
 Problem:
+
 FizzBuzz is a well known programming assignment, asked during interviews.
 The given code solves the FizzBuzz problem and uses the words "Solo" and "Learn" instead of "Fizz" and "Buzz".
 It takes an input n and outputs the numbers from 1 to n.
