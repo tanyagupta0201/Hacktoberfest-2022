@@ -1,3 +1,5 @@
+# Authors name- Nishant Singh
+# Date modified - 1-10-2022
 def sum(a, b, c):
     return a + b + c
 
