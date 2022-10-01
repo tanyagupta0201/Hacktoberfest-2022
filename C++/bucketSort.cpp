@@ -1,50 +1,67 @@
-/*
-    Authors Name : Utkarsh Tyagi
-    Date Modified: 1 October, 2022
-*/
-// C++ program to sort an
-// array using bucket sort
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<iostream>
 using namespace std;
-
-// Function to sort arr[] of
-// size n using bucket sort
-void bucketSort(float arr[], int n)
+int findMax(int arr[], int n)
 {
-	
-	// 1) Create n empty buckets
-	vector<float> b[n];
-
-	// 2) Put array elements
-	// in different buckets
-	for (int i = 0; i < n; i++) {
-		int bi = n * arr[i]; // Index in bucket
-		b[bi].push_back(arr[i]);
-	}
-
-	// 3) Sort individual buckets
-	for (int i = 0; i < n; i++)
-		sort(b[i].begin(), b[i].end());
-
-	// 4) Concatenate all buckets into arr[]
-	int index = 0;
-	for (int i = 0; i < n; i++)
-		for (int j = 0; j < b[i].size(); j++)
-			arr[index++] = b[i][j];
+    int i,max=arr[0],cnt=0;
+    for(i=1;i<n;i++)
+    {
+        if(arr[i]>max)
+            max=arr[i];
+    }
+    while(max>0)
+    {
+        cnt++;
+        max=max/10;
+    }
+   
+    return cnt;
 }
 
-/* Driver program to test above function */
+void bucketSort(int arr[],int *bucket[],int n)
+{
+    static int i,j[10],k,l,d=1;
+    int c;
+    c=findMax(arr,n);
+  
+    for(int m=0;m<c;m++)
+    {
+        for(i=0;i<10;i++)
+            j[i]=0;
+        for(i=0;i<n;i++)
+        {
+            k=(arr[i]/d)%10;
+            bucket[k][j[k]]=arr[i];
+            j[k]++;
+        }
+     
+        l=0;
+        for(i=0;i<10;i++)
+        {
+            for(k=0;k<j[i];k++)
+            {
+                arr[l]=bucket[i][k];
+                l++;
+            }
+        }
+        d*=10;
+    }
+}
 int main()
 {
-	float arr[]
-		= { 0.897, 0.565, 0.656, 0.1234, 0.665, 0.3434 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-	bucketSort(arr, n);
-
-	cout << "Sorted array is \n";
-	for (int i = 0; i < n; i++)
-		cout << arr[i] << " ";
-	return 0;
+    int n,*arr,i;
+    int *bucket[10];
+    cout<<"Enter no of element : ";
+    cin>>n;
+    arr=new int[n+1];
+    for(i=0;i<10;i++)
+        bucket[i]=new int[n];
+    cout<<"Enter array element : ";
+    for(i=0;i<n;i++)
+        cin>>arr[i];
+    bucketSort(arr,bucket,n);
+   
+    cout<<"Sorted array : ";
+    for(i=0;i<n;i++)
+        cout<<arr[i]<<" ";
+    return 0;
 }
