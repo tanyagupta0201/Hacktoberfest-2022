@@ -1,3 +1,8 @@
+/*
+    Authors Name : Adnan Sameer
+    Date Modified: 2 October, 2022
+*/
+
 // program to check if a number is prime or not
 
 // take input from the user
