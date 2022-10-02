@@ -1,3 +1,8 @@
+# THIS REPOSITORY HAS BEEN EXCLUDED FROM HACKTOBERFEST
+# USE THIS REPOSITORY FOR YOUR CONTRIBUTIONS
+# LINK: https://github.com/tanyagupta0201/LeetCode-Problems-Solutions
+
+
 # Hacktoberfest-2022🔥
 
 <br>
