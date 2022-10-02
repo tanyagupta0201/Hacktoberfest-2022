@@ -1,3 +1,10 @@
+/*
+    Code: Heap sort (JAVA)
+    Name: Dhruv Singh Jadon
+    Date of Modification: 2 October, 2022
+ */
+
+
 class Sort {
     public void heapSort(int arr[])
     {
