@@ -1,3 +1,9 @@
+/*
+    Code: Merge sort (JAVA)
+    Name: Dhruv Singh Jadon
+    Date of Modification: 2 October, 2022
+ */
+
 class Sort 
 {
     void merge(int arr[], int left, int middle, int right)
