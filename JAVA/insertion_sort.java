@@ -1,3 +1,8 @@
+/*
+    Code: Insertion sort (JAVA)
+    Name: Dhruv Singh Jadon
+    Date of Modification: 2 October, 2022
+ */
 class Sort  
 { 
     static void insertionSort(int arr[], int n) 
