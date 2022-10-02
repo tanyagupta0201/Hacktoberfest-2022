@@ -1,8 +1,11 @@
-### Construct BST from Preorder Traversal
+/*
+Author Name : Rachit Jain
+Date : 2nd October 2022
 
-**Question Link: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/**
+Construct BST from Preorder Traversal
+Question Link: https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/
+*/
 
-```
 class Solution {
 public:
     TreeNode* bstFromPreorder(vector<int>& preorder) {
@@ -21,4 +24,3 @@ public:
         return root ;
     }
 };
-```
