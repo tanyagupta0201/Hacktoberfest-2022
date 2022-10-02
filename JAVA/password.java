@@ -1,7 +1,7 @@
 /*
-Program Name : Write a java program to demonstrate TextField to input a password.
-Author: Madhavi Sonawane.
-Date : 2nd Oct 2022.
+Program Name : Write a java program to demonstrate TextField in AWT to input a password.
+Author Name : Madhavi Sonawane.
+Date Modified : 2nd Oct 2022.
 */
 
 import java.awt.*;
