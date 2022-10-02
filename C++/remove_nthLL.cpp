@@ -1,3 +1,8 @@
+/*
+    Author's Name: Aman Ali Siddiqui
+    Author's Git Username: a-ma-n
+    Date Modified: 02-10-2022
+*/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
