@@ -1,3 +1,10 @@
+"""
+    Code: A* Search (Python)
+    Authors Name : Ukesh Shrestha
+    Date Modified: 2 October, 2022
+"""
+
+
 class Graph:
     def __init__(self, adjacency_list):
         self.adjacency_list = adjacency_list
