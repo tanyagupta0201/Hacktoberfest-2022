@@ -1,3 +1,8 @@
+/*
+    Code: Selection sort (JAVA)
+    Name: Dhruv Singh Jadon
+    Date of Modification: 2 October, 2022
+ */
 class Sort 
 { 
     void selectionSort(int arr[]) 
