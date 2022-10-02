@@ -1,3 +1,8 @@
+"""
+    Authors Name : Abhishek Dobliyal
+    Date Modified: 02 October, 2022
+"""
+
 # A simple implementation of Huffman Coding in Python
 from heapq import *
 from collections import Counter
