@@ -1,3 +1,7 @@
+// Author name: Abhijit Mondal
+// Date: 3/10/2022
+
+
 // C++ program for the above approach
 #include <bits/stdc++.h>
 using namespace std;
